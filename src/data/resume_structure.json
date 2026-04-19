@@ -1,0 +1,28 @@
+{
+  "profile": {
+    "name": "Mateo Romero Contreras",
+    "role": "Systems Analyst",
+    "summary": "Placeholder summary to be completed from resume data."
+  },
+  "experience": [
+    {
+      "title": "Systems Analyst",
+      "company": "",
+      "period": "",
+      "highlights": []
+    },
+    {
+      "title": "QA Intern",
+      "company": "",
+      "period": "",
+      "highlights": []
+    }
+  ],
+  "projects": [
+    {
+      "name": "Gym Flow",
+      "description": "Placeholder for project details.",
+      "stack": []
+    }
+  ]
+}
