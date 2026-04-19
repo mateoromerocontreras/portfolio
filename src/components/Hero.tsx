@@ -1,5 +1,6 @@
 import { ArrowDown, Mail } from 'lucide-react';
 import data from '../data.json';
+import profilePic from '../assets/images/profile_picture.png';
 
 export default function Hero() {
   const { personalInfo, summary } = data;
@@ -10,33 +11,47 @@ export default function Hero() {
       <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-violet-600/20 rounded-full blur-[100px] pointer-events-none"></div>
       
-      <div className="max-w-4xl opacity-0 animate-fade-in-up">
-        <h2 className="text-indigo-400 font-medium tracking-widest uppercase mb-4 text-sm sm:text-base">
-          Trilingual System Analyst & Backend Developer
-        </h2>
-        
-        <h1 className="text-5xl sm:text-7xl font-extrabold text-white tracking-tight mb-6 opacity-0 animate-fade-in-up delay-100">
-          Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">{personalInfo.name}</span>.
-        </h1>
-        
-        <p className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-10 max-w-2xl opacity-0 animate-fade-in-up delay-200">
-          {summary}
-        </p>
-        
-        <div className="flex flex-wrap gap-4 opacity-0 animate-fade-in-up delay-300">
-          <a
-            href="#projects"
-            className="px-8 py-3 rounded-full bg-indigo-500 hover:bg-indigo-600 text-white font-medium transition-all transform hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-500/25"
-          >
-            View My Work
-          </a>
-          <a
-            href="#contact"
-            className="px-8 py-3 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium border border-slate-700 transition-all transform hover:-translate-y-1 flex items-center gap-2"
-          >
-            <Mail size={18} />
-            Contact Me
-          </a>
+      <div className="flex flex-col-reverse lg:flex-row items-center lg:items-center justify-between gap-12 w-full z-10 max-w-7xl mx-auto">
+        <div className="max-w-4xl opacity-0 animate-fade-in-up flex-1">
+          <h2 className="text-indigo-400 font-medium tracking-widest uppercase mb-4 text-sm sm:text-base">
+            Trilingual System Analyst & Backend Developer
+          </h2>
+          
+          <h1 className="text-5xl sm:text-7xl font-extrabold text-white tracking-tight mb-6 opacity-0 animate-fade-in-up delay-100">
+            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">{personalInfo.name}</span>.
+          </h1>
+          
+          <p className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-10 max-w-2xl opacity-0 animate-fade-in-up delay-200">
+            {summary}
+          </p>
+          
+          <div className="flex flex-wrap gap-4 opacity-0 animate-fade-in-up delay-300">
+            <a
+              href="#projects"
+              className="px-8 py-3 rounded-full bg-indigo-500 hover:bg-indigo-600 text-white font-medium transition-all transform hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-500/25"
+            >
+              View My Work
+            </a>
+            <a
+              href="#contact"
+              className="px-8 py-3 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium border border-slate-700 transition-all transform hover:-translate-y-1 flex items-center gap-2"
+            >
+              <Mail size={18} />
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <div className="flex-shrink-0 opacity-0 animate-fade-in-up delay-200 mb-8 lg:mb-0">
+          <div className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full p-2 bg-gradient-to-tr from-indigo-500 to-violet-500 shadow-2xl shadow-indigo-500/30">
+            <div className="w-full h-full rounded-full overflow-hidden bg-slate-900 border-4 border-slate-950">
+              <img 
+                src={profilePic} 
+                alt={personalInfo.name} 
+                className="w-full h-full object-cover" 
+              />
+            </div>
+          </div>
         </div>
       </div>
 
