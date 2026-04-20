@@ -105,7 +105,7 @@ export default function Contact() {
                   overflow: 'hidden',
                 }}
                 onMouseEnter={e => {
-                  e.currentTarget.style.borderColor = item.accent.startsWith('var') ? (item.accent === 'var(--phosphor)' ? '#4096ff' : item.accent === 'var(--green-sys)' ? '#00c896' : '#e03535') : item.accent;
+                  e.currentTarget.style.borderColor = item.accent;
                   e.currentTarget.style.boxShadow = `0 0 20px rgba(64, 150, 255, 0.1)`;
                   e.currentTarget.style.transform = 'translateY(-3px)';
                 }}
