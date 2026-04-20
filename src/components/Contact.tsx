@@ -136,7 +136,7 @@ export default function Contact() {
                     border: `2px solid var(--border)`,
                     backgroundColor: 'var(--deep)',
                     flexShrink: 0,
-                    color: item.accent.startsWith('var') ? (item.accent === 'var(--phosphor)' ? '#4096ff' : item.accent === 'var(--green-sys)' ? '#00c896' : '#e03535') : item.accent,
+                    color: item.accent,
                   }}>
                     <Icon size={18} />
                   </div>
