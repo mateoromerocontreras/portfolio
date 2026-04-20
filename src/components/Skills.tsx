@@ -55,7 +55,7 @@ export default function Skills() {
                   overflow: 'hidden',
                 }}
                 onMouseEnter={e => {
-                  e.currentTarget.style.borderColor = cat.accent.startsWith('var') ? (cat.accent === 'var(--phosphor)' ? '#4096ff' : cat.accent === 'var(--green-sys)' ? '#00c896' : '#e03535') : cat.accent;
+                  e.currentTarget.style.borderColor = cat.accent;
                   e.currentTarget.style.boxShadow = `0 0 20px ${cat.accent === 'var(--phosphor)' ? 'rgba(64,150,255,0.15)' : 'rgba(0,0,0,0.2)'}`;
                 }}
                 onMouseLeave={e => {
