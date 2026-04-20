@@ -54,12 +54,12 @@ function App() {
                     padding: '0.25rem 0',
                   }}
                   onMouseEnter={e => {
-                    (e.target as HTMLElement).style.color = 'var(--phosphor)';
-                    (e.target as HTMLElement).style.textShadow = '0 0 8px rgba(64, 150, 255, 0.6)';
+                    e.currentTarget.style.color = 'var(--phosphor)';
+                    e.currentTarget.style.textShadow = '0 0 8px rgba(64, 150, 255, 0.6)';
                   }}
                   onMouseLeave={e => {
-                    (e.target as HTMLElement).style.color = 'var(--text-dim)';
-                    (e.target as HTMLElement).style.textShadow = 'none';
+                    e.currentTarget.style.color = 'var(--text-dim)';
+                    e.currentTarget.style.textShadow = 'none';
                   }}
                 >
                   {label}
